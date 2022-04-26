@@ -1,6 +1,5 @@
 from models import *
 
-
 def json_response(data, message, code):
     if data and message:
         result = {'data': data, 'message': message}
