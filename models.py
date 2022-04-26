@@ -24,7 +24,7 @@ class Article(db.Model):
             'description': self.description, 
             'author': self.author, 
             'content': self.content,
-            'thumbnail': self.thumbnail,
+            'thumbnail': '/api/uploads/' + self.thumbnail,
             'createdAt': self.created_at,
             'modifiedAt': self.modified_at
         }

@@ -12,6 +12,11 @@ def json_response(data, message, code):
     return make_response(jsonify(result), code)
 
 
+@app.route('/api/uploads/<filename>', methods=['GET'])
+def index(filename):
+    return send_from_directory('uploads', filename)
+
+
 @app.route('/api/articles', methods=['GET'])
 def get_articles():
     return json_response(Article.get_all_article(), None, 200)
