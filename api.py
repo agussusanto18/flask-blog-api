@@ -81,4 +81,4 @@ def update_article(id):
 
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True)
+    app.run()
